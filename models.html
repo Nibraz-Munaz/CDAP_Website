@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-Tongue</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="./css/all.css">
+
+
+    <!-- --------- Owl-Carousel ------------------->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- ------------ AOS Library ------------------------- -->
+    <link rel="stylesheet" href="./css/aos.css">
+
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href="./css/Style.css">
+
+</head>
+
+<body>
+
+    <!-- ----------------------------  Navigation ---------------------------------------------- -->
+
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#" class="text-gray">E-Tongue</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="device.html">Device</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="models.html">ML Models</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="documents.html">Documents</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="aboutus.html">End Product</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- ---------------------- Home Page Image -------------------------->
+
+        <section class="container">
+            <div class="site-content">
+                <div class="posts">
+
+                    <!--WQI description-->
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/Blog-post/WQI.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Why Water Quality Index (WQI)? Why not use traditional methods to examine 
+                                groundwater quality?</a>
+                            <p>Water Quality Index (WQI) is a single numeric index that is used to measure the quality of water
+                                in general, which includes complex mathematical calculation process. The advantage of using WQI over traditional reference methods is due to its reliable
+                                and precise output. Traditional methods used in Sri Lanka is based on a cross reference method.
+                                The parameter readings are obtained through sensors or other measurement methods and they are
+                                cross referenced with the standard SLS (614:2013) approved chart to see whether the readings are
+                                falling within an approved range.
+                                <span id="dots">...</span>
+                            </p>
+                            <p id="readModel1">The contradiction comes in when one parameter falls within the approved range and the other
+                                doesn’t. These type of scenarios pushes the identification process towards a subjective way where
+                                people have to decide whether the water is suitable or not for usage, especially for drinking.
+                            </p>
+                            <p id="readModel2">On the other hand, WQI can be used to precisely state the quality of the water that is being tested.
+                                All we have to do is compare the final numeric output (which is the WQI) and look for the class it
+                                belongs to. The classes generally range from very poor to very good.
+                            </p>
+                            <p id="readModel3">The idea of using Water Quality Index in groundwater quality assessment comes in handy 
+                                when it is incorporated with Artificial Intelligence techniques for a real time result acquiring 
+                                process. Several regression algorithms have been trained and compared inorder to select the best one 
+                                among them for the final implementation in the cloud. The end product displays the sensor readings 
+                                along with the predicted WQI value and Suggestion methods to purify the water sample if needed.
+                            </p>
+                            <button class="btn post-btn" id="readWQI" onclick="readModelWQI()">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                            
+                            <!--function to read more and read less-->
+                            <script type="text/javascript">
+                                var i=0;
+                                var readModel1 = document.getElementById("readModel1");
+                                var readModel2 = document.getElementById("readModel2");
+                                var readModel3 = document.getElementById("readModel3");
+                                var dots = document.getElementById("dots");
+                                function readModelWQI() {
+                                    if(i==0) {
+                                        readModel1.style.display = "block";
+                                        readModel2.style.display = "block";
+                                        readModel3.style.display = "block";
+                                        dots.style.display = "none";
+                                        document.getElementById("readWQI").innerHTML ="Read Less";
+                                        i=1;
+                                    }
+                                    else {
+                                        readModel1.style.display = "none";
+                                        readModel2.style.display = "none";
+                                        readModel3.style.display = "none";
+                                        dots.style.display = "block";
+                                        document.getElementById("readWQI").innerHTML ="Read More";
+                                        i=0;
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div>
+
+                    <!--CKDu description-->
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/Blog-post/CKDu.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Groundwater and CKDu. Are people of Srilanka in danger?</a>
+                            <p>Sri Lanka has a populace of roughly 20 million and farming is a significant part of the
+                                economy. Chronic kidney disease (CKD) is a significant weight on the medical care
+                                arrangement of Sri Lanka. Diabetes, hypertension, and the different types of
+                                glomerulonephritis are very much perceived etiologies. With expanding predominance of
+                                non-transferable maladies, specifically diabetes and hypertension, the weight of CKD is
+                                relied upon to rise.5 Since the 1990s, another CKD, where no undeniable reason is
+                                recognizable, has been depicted in Sri Lanka. This new condition has brought about an
+                                ascent in the frequency of CKD in rustic Sri Lanka and has been suitably named ceaseless
+                                kidney malady of obscure etiology (CKDu). Alternate proposed names for this condition
+                                incorporate chronic agricultural nephropathy (CAN) and CKD of multifactorial origin
+                                (CKD-mfo). Similar substances with obscure reason for CKD exist in different pieces of
+                                the world. Ecological operators and conditions, for example, substantial metals and
+                                modern synthetic concoctions, have been connected to the advancement of CKDu in
+                                different pieces of the world.
+                                <span id="dots">...</span>
+                            </p>
+                            <p id="readModel4">Uncontrolled use of ground water and natural poor quality or contamination can lead to above mentioned
+                                major health concerns such as kidney failures, cardio vascular disease, dental fluorosis
+                                and CKDu. Unawareness of quality of the consuming ground water is one of the major
+                                causes for these scenarios. Chronic Kidney Disease of unknown aetiology (CKDu) is one
+                                of the greatest problems in north central province (NCP) which recorded highest mortality
+                                and morbidity rates and recognized reasons were unknown. Although there are solutions
+                                to determine the quality of ground water sample, those solutions need a period of time to
+                                deliver the results. Therefore, a solution that will help to overcome the challenge of
+                                determining water quality real time is demanded.
+                            </p>
+                            <p id="readModel5">Predicting CKDu outbreak based on location for this component requires Machine Learning approaches 
+                                using classification algorithms and a final classification result is displayed to the user.
+                            </p>
+                            <button class="btn post-btn" id="readCKDU" onclick="readModelCKD()">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                        
+                            <!--function to read more and read less-->
+                            <script type="text/javascript">
+                                var i=0;
+                                var readModel4 = document.getElementById("readModel4");
+                                var readModel5 = document.getElementById("readModel5");
+                                var dots = document.getElementById("dots");
+                                function readModelCKD() {
+                                    if(i==0) {
+                                        readModel4.style.display = "block";
+                                        readModel5.style.display = "block";
+                                        dots.style.display = "none";
+                                        document.getElementById("readCKDU").innerHTML ="Read Less";
+                                        i=1;
+                                    }
+                                    else {
+                                        readModel4.style.display = "none";
+                                        readModel5.style.display = "none";
+                                        dots.style.display = "block";
+                                        document.getElementById("readCKDU").innerHTML ="Read More";
+                                        i=0;
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div>
+
+                    <!--Water quality parameter forecasting description-->
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/Blog-post/forecast.jpg" class="img" alt="blog1">
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Groundwater quality vs Seasonal variation</a>
+                            <p>Groundwater consumption of dry zone areas is raised rapidly as well as it will be affected by
+                                seasonal variation. Sri Lanka is mainly divided into three climatic zones such as wet zone, dry
+                                zone, and intermediate zone. Figure 2 Climatic zones in Sri Lanka shows the department of
+                                geography in Sri Lanka is divided into climatic zones. Hence, there is around 75% comes under
+                                dry zone areas also the absence of rivers in that area therefore consumers depend on groundwater
+                                for drinking and agriculture. 
+                                <span id="dots">...</span>
+                            </p>
+                            <p id="readModel6">There is shortage of the drinking water that has been occurred in many dry zone areas according to the
+                                Disaster Management report in Sri Lanka. There are 337 000 people across the eight out of the
+                                twenty-five districts of Sri Lanka which are affecting the water shortage due to sea water intrusion
+                                into ground water and dry spell. Therefore, rapidly increase the consumer level of certain water
+                                resources, it also affects the water quality parameter in the future, for that case we need to check
+                                the level of water quality parameter in advance. The changing level of the water quality parameters
+                                that impact the safeness of the water. In order to avoid those reasons, we need to know the water
+                                quality parameter level in preemptively. The Department of Meteorology in Sri Lanka reported
+                                seasonal climate changes during March to May is affected the water quality parameters because of
+                                the dry spell.
+                            </p>
+                            <p id="readModel7">A smart intelligence device that has the capability to predict water quality is proposed to develop
+                                a final year research project. It will be utilized to predict the water quality for the future and to
+                                visualize the water quality sources based on the seasonal changes on the heat map. If forecasting
+                                the water quality parameters of the groundwater are in the dry zone area, then it will favor for
+                                people who are suffering from bad quality of water based on seasonal variation. Through this
+                                system, the consumer will be alerted when the water goes under a low water quality index.
+                                Therefore, they will be able to take better precautions for purifying water.
+                            </p>
+                            <button class="btn post-btn" id="readFP" onclick="readModelFP()">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                        
+                            <!--function to read more and read less-->
+                            <script type="text/javascript">
+                                var i=0;
+                                var readModel6 = document.getElementById("readModel6");
+                                var readModel7 = document.getElementById("readModel7");
+                                var dots = document.getElementById("dots");
+                                function readModelFP() {
+                                    if(i==0) {
+                                        readModel6.style.display = "block";
+                                        readModel7.style.display = "block";
+                                        dots.style.display = "none";
+                                        document.getElementById("readFP").innerHTML ="Read Less";
+                                        i=1;
+                                    }
+                                    else {
+                                        readModel6.style.display = "none";
+                                        readModel7.style.display = "none";
+                                        dots.style.display = "block";
+                                        document.getElementById("readFP").innerHTML ="Read More";
+                                        i=0;
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div>
+                    
+                </div>
+                <aside class="sidebar">
+                    <!--algorithm summary 1-->
+                    <div class="popular-post">
+                        <h2>Regression Algorithms</h2>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/popular-post/linearR.webp" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span>Linear Regression</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">Linear Regression was used in the WQI prediction function along 
+                                    with other regression algorithms.
+                                </a>
+                                <h6>Obtained accuracy: 92.49%</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--algorithm summary 2-->
+                    <div class="popular-post">
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/popular-post/LSTM.png" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span>LSTM Regression</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">LSTM is a Recurrent Neural Network (RNN) algorithm for forecasting time 
+                                    series data.</a>
+                                    <h6>Obtained accuracy: 70.94%</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--algorithm summary 3-->
+                    <div class="popular-post">
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/popular-post/KNN.jpg" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span>K-Nearest Neighbors Regression</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">K-NN is used in this system for WQI prediction comparison as well as to forecast 
+                                    water quality parameters.
+                                </a>
+                                <h6>WQI prediction accuracy: 64.24%</h6>
+                                <h6>Forecasting accuracy: 72.92%</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--algorithm summary 4-->
+                    <div class="popular-post">
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/popular-post/RFR.png" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span>Random Forest Regression</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">RFR is finalised based on the accuracies of the outputs on both 
+                                    WQI prediction model and parameter focasting model and used in the final sysytem.
+                                </a>
+                                <h6>WQI prediction accuracy: 97.82%</h6>
+                                <h6>Forecasting accuracy: 83.24%</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--algorithm summary 5-->
+                    <div class="popular-post">
+                        <h2>Classification Algorithms</h2>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/popular-post/PSVM.JPG" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span>Polynomial Kernel SVM</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">Among Support Vector Machine that represents the similarity of vectors 
+                                    in a feature space, Polynomial kernel SVM is used to classify the risk of CKDu outbreak.</a>
+                                <h6>Obtained accuracy: 76.99%</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--algorithm summary 6-->
+                    <div class="popular-post">
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/popular-post/SSVM.png" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span>Sigmoid Kernel SVM</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">The sigmoid kernel was quite popular for support vector 
+                                    machines due to its origin from neural networks.</a>
+                                <h6>Obtained accuracy: 54.32%</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </aside>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- --------------------------- Footer ---------------------------------------- -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                <h2>About us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quia atque nemo ad modi officiis
+                    iure, autem nulla tenetur repellendus.</p>
+            </div>
+            <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+                <h2>Newsletter</h2>
+                <p>Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+            <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+                <h2>Instagram</h2>
+                <div class="flex-row">
+                    <img src="./assets/instagram/i1.jpg" alt="insta1">
+                    <img src="./assets/instagram/i2.jpg" alt="insta2">
+                    <img src="./assets/instagram/i3.jpg" alt="insta3">
+                </div>
+                <div class="flex-row">
+                    <img src="./assets/instagram/i4.png" alt="insta4">
+                    <img src="./assets/instagram/i5.jpg" alt="insta5">
+                    <img src="./assets/instagram/i6.jpg" alt="insta6">
+                </div>
+            </div>
+            <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                <h2>Follow us</h2>
+                <p>Let us be Social</p>
+                <div>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright ©2020 All rights reserved | made by Sri Lanka Institute of Information Technology Research Group -164
+            </h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+
+
+    <!-- Jquery Library file -->
+    <script src="./js/Jquery3.4.1.min.js"></script>
+
+    <!-- --------- Owl-Carousel js ------------------->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- ------------ AOS js Library  ------------------------- -->
+    <script src="./js/aos.js"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
